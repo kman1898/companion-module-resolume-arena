@@ -5,6 +5,7 @@ import {CompanionFeedbackDefinition} from '@companion-module/base';
 export function layerTransportPosition(resolumeArenaInstance: ResolumeArenaModuleInstance): CompanionFeedbackDefinition {
 	return {
 		type: 'advanced',
+		affectedProperties: ['size', 'text'],
 		name: 'Layer Active Clip Transport Position',
 		options: [...getLayerOption(),
 			{

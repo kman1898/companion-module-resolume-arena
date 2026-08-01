@@ -5,6 +5,7 @@ import {CompanionFeedbackDefinition, combineRgb} from '@companion-module/base';
 export function connectedClip(resolumeArenaInstance: ResolumeArenaModuleInstance): CompanionFeedbackDefinition {
 	return {
 		type: 'advanced',
+		affectedProperties: ['bgcolor', 'text'],
 		name: 'Connected Clip',
 		options: [...getLayerOption(), ...getColumnOption(),
 			// Numeric defaults — `returnType: 'number'` requires the option

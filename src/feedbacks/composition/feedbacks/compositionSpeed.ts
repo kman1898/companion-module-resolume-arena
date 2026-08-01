@@ -4,6 +4,7 @@ import {CompanionFeedbackDefinition} from '@companion-module/base';
 export function compositionSpeed(resolumeArenaInstance: ResolumeArenaModuleInstance): CompanionFeedbackDefinition {
 	return {
 		type: 'advanced',
+		affectedProperties: ['imageBuffer', 'text'],
 		name: 'Composition Speed',
 		options: [],
 		callback: resolumeArenaInstance.getCompositionUtils()!.compositionSpeedFeedbackCallback.bind(resolumeArenaInstance.getCompositionUtils()!),

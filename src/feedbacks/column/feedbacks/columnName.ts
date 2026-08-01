@@ -4,6 +4,7 @@ import {getColumnOption} from '../../../defaults.js';
 
 export function columnName(resolumeArenaInstance: ResolumeArenaModuleInstance): CompanionFeedbackDefinition {return {
 	type: 'advanced',
+		affectedProperties: ['bgcolor', 'color', 'text'],
 	name: 'Column Name',
 	options: [...getColumnOption()],
 	callback: resolumeArenaInstance.getColumnUtils()!.columnNameFeedbackCallback.bind(resolumeArenaInstance.getColumnUtils()!)

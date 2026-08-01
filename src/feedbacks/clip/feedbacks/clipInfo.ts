@@ -5,6 +5,7 @@ import {getColumnOption, getLayerOption} from '../../../defaults.js';
 export function clipInfo(resolumeArenaInstance: ResolumeArenaModuleInstance):CompanionFeedbackDefinition{
 	return {
 		type: 'advanced',
+		affectedProperties: ['png64', 'text', 'imageBuffer'],
 		name: 'Clip Info',
 		options: [
 			...getLayerOption(),

@@ -5,6 +5,7 @@ import {CompanionFeedbackDefinition} from '@companion-module/base';
 export function clipSpeed(resolumeArenaInstance: ResolumeArenaModuleInstance): CompanionFeedbackDefinition {
 	return {
 		type: 'advanced',
+		affectedProperties: ['imageBuffer', 'text'],
 		name: 'Clip Speed',
 		options: [...getLayerOption(), ...getColumnOption()],
 		callback: resolumeArenaInstance.getClipUtils()!.clipSpeedFeedbackCallback.bind(resolumeArenaInstance.getClipUtils()!),

@@ -5,6 +5,7 @@ import {getColumnOption, getLayerOption} from '../../../defaults.js';
 export function clipTransportPosition(resolumeArenaInstance: ResolumeArenaModuleInstance): CompanionFeedbackDefinition {
 	return {
 		type: 'advanced',
+		affectedProperties: ['size', 'text'],
 		name: 'Clip Transport Position',
 		options:
 			[...getLayerOption(), ...getColumnOption(),

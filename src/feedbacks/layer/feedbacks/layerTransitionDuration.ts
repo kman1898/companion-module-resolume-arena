@@ -5,6 +5,7 @@ import {CompanionFeedbackDefinition} from '@companion-module/base';
 export function layerTransitionDuration(resolumeArenaInstance: ResolumeArenaModuleInstance): CompanionFeedbackDefinition {
 	return {
 		type: 'advanced',
+		affectedProperties: ['imageBuffer', 'size', 'text'],
 		name: 'Layer Transition Duration',
 		options: [...getLayerOption()],
 		callback: resolumeArenaInstance.getLayerUtils()!.layerTransitionDurationFeedbackCallback.bind(resolumeArenaInstance.getLayerUtils()!)

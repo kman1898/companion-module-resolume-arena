@@ -5,6 +5,7 @@ import {CompanionFeedbackDefinition} from '@companion-module/base';
 export function connectedLayerGroupColumnName(resolumeArenaInstance: ResolumeArenaModuleInstance): CompanionFeedbackDefinition {
 	return {
 		type: 'advanced',
+		affectedProperties: ['bgcolor', 'color', 'text'],
 		name: 'Connected Layer Group Column Name',
 		options: [...getLayerGroupOption()],
 		callback: resolumeArenaInstance.getLayerGroupUtils()!.layerGroupColumnConnectedNameFeedbackCallback.bind(resolumeArenaInstance.getLayerGroupUtils()!)

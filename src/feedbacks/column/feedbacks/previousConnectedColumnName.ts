@@ -3,6 +3,7 @@ import {CompanionFeedbackDefinition} from '@companion-module/base';
 
 export function previousConnectedColumnName(resolumeArenaInstance: ResolumeArenaModuleInstance): CompanionFeedbackDefinition {return {
 	type: 'advanced',
+		affectedProperties: ['text'],
 	name: 'Previous Connected Column Name',
 	options: [{
 		id: 'previous',

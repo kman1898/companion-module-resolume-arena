@@ -15,6 +15,7 @@ export function effectParameter(resolumeArenaInstance: ResolumeArenaModuleInstan
 	const nameSuffix = withClipList ? ' — from list' : '';
 	return {
 		type: 'advanced',
+		affectedProperties: ['text'],
 		name: `Effect Parameter Value (${SCOPE_LABELS[scope]}${nameSuffix})`,
 		options: [
 			...buildScopedEffectOptions(eu, scope, withClipList),

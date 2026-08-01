@@ -14,6 +14,7 @@ export function getOscTransportFeedbacks(
 	return {
 		oscProgressBar: {
 			type: 'advanced',
+			affectedProperties: ['bgcolor', 'color', 'text', 'size', 'imageBuffer'],
 			name: 'OSC: Progress Bar',
 			description: 'Visual progress bar for layer playback. Green → Orange (≤30s) → Red (≤10s). Left to right.',
 			options: [
@@ -118,6 +119,7 @@ export function getOscTransportFeedbacks(
 		},
 		oscActiveColumn: {
 			type: 'advanced',
+			affectedProperties: ['bgcolor', 'color'],
 			name: 'OSC: Active Column',
 			description: 'Highlights when the specified column is the active composition column.',
 			options: [

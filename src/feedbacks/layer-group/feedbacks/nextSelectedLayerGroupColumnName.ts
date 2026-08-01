@@ -5,6 +5,7 @@ import {CompanionFeedbackDefinition} from '@companion-module/base';
 export function nextSelectedLayerGroupColumnName(resolumeArenaInstance: ResolumeArenaModuleInstance): CompanionFeedbackDefinition {
 	return {
 		type: 'advanced',
+		affectedProperties: ['bgcolor', 'color', 'text'],
 		name: 'Next Selected Layer Group Column Name',
 		options: [...getLayerGroupOption(), {
 			id: 'next',

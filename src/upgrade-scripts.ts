@@ -6,6 +6,7 @@ import {upgrade_v3_7_0} from './upgrade-scripts/upgrade_v3_7_0.js';
 import {upgrade_v3_10_0} from './upgrade-scripts/upgrade_v3_10_0.js';
 import {upgrade_v3_13_0} from './upgrade-scripts/upgrade_v3_13_0.js';
 import {upgrade_v4_0_0} from './upgrade-scripts/upgrade_v4_0_0.js';
+import {upgrade_v4_3_0} from './upgrade-scripts/upgrade_v4_3_0.js';
 
 export const UpgradeScripts: CompanionStaticUpgradeScript<any>[] = [
 	upgrade_v1_0_4,
@@ -15,4 +16,5 @@ export const UpgradeScripts: CompanionStaticUpgradeScript<any>[] = [
 	upgrade_v3_10_0,
 	upgrade_v3_13_0,
 	upgrade_v4_0_0,
+	upgrade_v4_3_0,
 ];

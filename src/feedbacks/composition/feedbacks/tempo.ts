@@ -5,6 +5,7 @@ export function tempo(resolumeArenaInstance: ResolumeArenaModuleInstance): Compa
 	const utils = resolumeArenaInstance.getCompositionUtils()!;
 	return {
 		type: 'advanced',
+		affectedProperties: ['text'],
 		name: 'Tempo',
 		options: [],
 		callback: utils.compositionTempoFeedbackCallback.bind(utils),

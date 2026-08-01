@@ -5,6 +5,7 @@ import {getLayerGroupOption} from '../../../defaults.js';
 export function layerGroupSpeed(resolumeArenaInstance: ResolumeArenaModuleInstance): CompanionFeedbackDefinition {
 	return {
 		type: 'advanced',
+		affectedProperties: ['imageBuffer', 'text'],
 		name: 'Layer Group Speed',
 		options: [...getLayerGroupOption()],
 		callback: resolumeArenaInstance.getLayerGroupUtils()!.layerGroupSpeedFeedbackCallback.bind(resolumeArenaInstance.getLayerGroupUtils()!),

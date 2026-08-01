@@ -5,6 +5,7 @@ import {CompanionFeedbackDefinition} from '@companion-module/base';
 export function layerGroupVolume(resolumeArenaInstance: ResolumeArenaModuleInstance): CompanionFeedbackDefinition {
 	return {
 		type: 'advanced',
+		affectedProperties: ['imageBuffer', 'text'],
 		name: 'Layer Group Volume',
 		options: [...getLayerGroupOption()],
 		callback: resolumeArenaInstance.getLayerGroupUtils()!.layerGroupVolumeFeedbackCallback.bind(resolumeArenaInstance.getLayerGroupUtils()!),

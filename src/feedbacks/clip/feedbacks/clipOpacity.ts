@@ -5,6 +5,7 @@ import {CompanionFeedbackDefinition} from '@companion-module/base';
 export function clipOpacity(resolumeArenaInstance: ResolumeArenaModuleInstance): CompanionFeedbackDefinition {
 	return {
 		type: 'advanced',
+		affectedProperties: ['imageBuffer', 'text'],
 		name: 'Clip Opacity',
 		options: [...getClipOption()],
 		callback: resolumeArenaInstance.getClipUtils()!.clipOpacityFeedbackCallback.bind(resolumeArenaInstance.getClipUtils()!),

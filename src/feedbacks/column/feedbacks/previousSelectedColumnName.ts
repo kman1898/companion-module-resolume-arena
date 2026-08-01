@@ -3,6 +3,7 @@ import {CompanionFeedbackDefinition} from '@companion-module/base';
 
 export function previousSelectedColumnName(resolumeArenaInstance: ResolumeArenaModuleInstance): CompanionFeedbackDefinition {return {
 	type: 'advanced',
+		affectedProperties: ['bgcolor', 'color', 'text'],
 	name: 'Previous Selected Column Name',
 	options: [{
 		id: 'previous',

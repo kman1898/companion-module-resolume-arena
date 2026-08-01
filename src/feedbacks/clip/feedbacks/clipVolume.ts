@@ -5,6 +5,7 @@ import {CompanionFeedbackDefinition} from '@companion-module/base';
 export function clipVolume(resolumeArenaInstance: ResolumeArenaModuleInstance): CompanionFeedbackDefinition {
 	return {
 		type: 'advanced',
+		affectedProperties: ['imageBuffer', 'text'],
 		name: 'Clip Volume',
 		options: [...getClipOption()],
 		callback: resolumeArenaInstance.getClipUtils()!.clipVolumeFeedbackCallback.bind(resolumeArenaInstance.getClipUtils()!),

@@ -4,6 +4,7 @@ import {CompanionFeedbackDefinition} from '@companion-module/base';
 export function previousDeckName(resolumeArenaInstance: ResolumeArenaModuleInstance): CompanionFeedbackDefinition {
 	return {
 		type: 'advanced',
+		affectedProperties: ['text'],
 		name: 'Previous Deck Name',
 		options: [{
 			id: 'previous',

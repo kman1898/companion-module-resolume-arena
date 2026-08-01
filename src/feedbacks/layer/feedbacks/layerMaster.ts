@@ -5,6 +5,7 @@ import {CompanionFeedbackDefinition} from '@companion-module/base';
 export function layerMaster(resolumeArenaInstance: ResolumeArenaModuleInstance): CompanionFeedbackDefinition {
 	return {
 		type: 'advanced',
+		affectedProperties: ['imageBuffer', 'text'],
 		name: 'Layer Master',
 		options: [...getLayerOption()],
 		callback: resolumeArenaInstance.getLayerUtils()!.layerMasterFeedbackCallback.bind(resolumeArenaInstance.getLayerUtils()!),
